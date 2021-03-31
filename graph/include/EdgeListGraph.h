@@ -26,11 +26,7 @@ private:
     std::list<Edge> edges;
 
 public:
-    /**
-     * capability 预估总共有多少条边，优化性能。
-     */
-    EdgeListGraph(unsigned int capability) : edges(capability) {
-
+    EdgeListGraph() : edges() {
     }
 
     /**
@@ -45,7 +41,7 @@ public:
      */
     int uniqueEdges(bool ui = false);
 
-    bool operator==(EdgeListGraph & other) const {
+    bool operator==(EdgeListGraph const & other) const {
         return this->edges == other.edges;
     }
 };
