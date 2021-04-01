@@ -8,7 +8,7 @@ void EdgeListGraph::addEdge(int src, int snk, int cost) {
     edges.push_back(edge);
 }
 
-int EdgeListGraph::uniqueEdges(bool ui) {
+int EdgeListGraph::uniqueEdges() {
     
     if (!ui) {
         for (auto it = edges.begin(); it != edges.end(); ++it) {

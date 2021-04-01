@@ -24,9 +24,11 @@ private:
     };
 
     std::list<Edge> edges;
+    bool ui = false;
 
 public:
-    EdgeListGraph() : edges() {
+    EdgeListGraph(bool ui = false) {
+        this->ui = ui;
     }
 
     /**
@@ -39,7 +41,7 @@ public:
      * ui 是不是单向图，默认是双向图
      * return 有多少重复的边
      */
-    int uniqueEdges(bool ui = false);
+    int uniqueEdges();
 
     bool operator==(EdgeListGraph const & other) const {
         return this->edges == other.edges;
