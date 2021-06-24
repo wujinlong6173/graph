@@ -2,6 +2,7 @@
 add_library(graph 
     src/EdgeListGraph.cpp
     src/ImmutableGraph.cpp 
+    src/GraphChangeData.cpp
 )
 
 target_include_directories(graph PUBLIC include)

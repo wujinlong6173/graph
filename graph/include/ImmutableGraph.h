@@ -1,6 +1,9 @@
 #include <vector>
 #include <unordered_map>
 
+/**
+ * 锁定后就不会被修改的有向图。
+ */
 class ImmutableGraph {
 private:
     // 节点和它的邻居
